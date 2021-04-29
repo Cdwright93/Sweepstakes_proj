@@ -8,7 +8,5 @@ class MarketingFirm:
         self.manager = manager
 
     def create_sweepstakes(self):
-        if self.manager == StackManager:
-            Sweepstake()
-        if self.manager == QueueManager:
-            Sweepstake()
+        sweepstake = Sweepstake()
+        self.manager.insert_sweepstakes(sweepstake)

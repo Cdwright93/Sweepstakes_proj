@@ -3,6 +3,7 @@ import random
 
 
 class Sweepstake:
+
     def __init__(self):
         self.contestants = []
         self.name = ''

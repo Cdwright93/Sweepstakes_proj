@@ -4,4 +4,11 @@ from Sweepstake import Sweepstake
 
 class QueueManager:
     def __init__(self):
-        Queue()
+        self.queue = Queue()
+
+    def insert_sweepstakes(self, sweepstakes):
+        self.queue.enqueue(sweepstakes)
+
+
+    def get_sweepstakes(self):
+        return self.queue.dequeue()
