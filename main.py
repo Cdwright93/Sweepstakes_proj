@@ -4,7 +4,8 @@ from MarketingFirm import MarketingFirm
 
 class Simulation:
     def __init__(self):
-        MarketingFirm(MarketingFirmCreator.choose_manager_type())
+        manager = MarketingFirmCreator.choose_manager_type()
+        MarketingFirm(manager)
 
 
 Simulation()
