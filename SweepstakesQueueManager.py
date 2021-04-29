@@ -1,2 +1,6 @@
 from data_queue import Queue
-from Sweepstake import ############
+
+
+class QueueManager:
+    def __init__(self):
+        pass

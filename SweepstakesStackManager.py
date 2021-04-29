@@ -1,2 +1,6 @@
 from data_stack import Stack
-from Sweepstake import #########
+
+
+class StackManager:
+    def __init__(self):
+        pass

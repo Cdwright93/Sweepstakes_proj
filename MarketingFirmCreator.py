@@ -1,10 +1,13 @@
-class MarketingFirm:
-    def __init__(self):
-        self.type = None
+from MarketingFirm import MarketingFirm
+from SweepstakesStackManager import StackManager
+from SweepstakesQueueManager import QueueManager
 
-    def choose_manager_type(self):
-        choice = ''
-        if choice == 'stack':
-            self.type = 'stack'
-        if choice == 'queue':
-            self.type = 'queue'
+
+def choose_manager_type():
+    choice = input("Would you like to use a stack or a queue manager?")
+    if choice == 'stack':
+        manager = StackManager()
+        return manager
+    if choice == 'queue':
+        manager = QueueManager()
+        return manager

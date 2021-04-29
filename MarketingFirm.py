@@ -1,10 +1,7 @@
-from MarketingFirmCreator import MarketingFirm
-from SweepstakesQueueManager import ############
-from SweepstakesStackManager import ############
+from SweepstakesQueueManager import QueueManager
+from SweepstakesStackManager import StackManager
 
-class Manager:
-    def __init__(self):
-        pass
 
-    def create_sweepstakes(list):
-        pass
+class MarketingFirm:
+    def __init__(self, manager):
+        self.manager = manager
